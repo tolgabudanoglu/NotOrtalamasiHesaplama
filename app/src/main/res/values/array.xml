@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="notlar">
+        <item>AA</item>
+        <item>BA</item>
+        <item>BB</item>
+        <item>CB</item>
+        <item>CC</item>
+        <item>DC</item>
+        <item>DD</item>
+        <item>FD</item>
+        <item>FF</item>
+    </string-array>
+    
+    <string-array name="krediler">
+        <item>1 kredi</item>
+        <item>2 kredi</item>
+        <item>3 kredi</item>
+        <item>4 kredi</item>
+        <item>5 kredi</item>
+        <item>6 kredi</item>
+        <item>7 kredi</item>
+        <item>8 kredi</item>
+        <item>9 kredi</item>
+        <item>10 kredi</item>
+        <item>11 kredi</item>
+    </string-array>
+
+</resources>

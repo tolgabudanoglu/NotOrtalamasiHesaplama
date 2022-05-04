@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.example.notortalamashesaplama.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/dersAd"
+            android:layout_width="274dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="217dp"
+            android:layout_marginRight="217dp"
+            android:hint="@string/ders_ad_n_giriniz"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@android:color/transparent"
+            android:popupBackground="@color/purple_500"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/dersKredi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/dersKredi"
+            android:layout_width="132dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="312dp"
+            android:layout_marginRight="312dp"
+            android:textStyle="bold"
+            android:entries="@array/krediler"
+            android:popupBackground="@color/purple_500"
+            android:backgroundTint="@color/purple_500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dersAd" />
+
+        <Spinner
+            android:id="@+id/dersNot"
+            android:layout_width="147dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:entries="@array/notlar"
+            android:textStyle="bold"
+            android:backgroundTint="@color/purple_500"
+            android:popupBackground="@color/purple_500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dersAd" />
+
+        <Button
+            android:id="@+id/dersEkleme"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/btnadd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintStart_toEndOf="@+id/dersNot"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/purple_200">
+        
+    </View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rootLayout">
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/Hesaplama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hesapla"
+        android:background="@drawable/btnorthesap"
+        android:onClick="ortalamaHesapla" />
+
+
+
+
+
+
+
+</LinearLayout>
