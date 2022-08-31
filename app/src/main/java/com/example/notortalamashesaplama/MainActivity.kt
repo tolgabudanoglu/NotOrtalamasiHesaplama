@@ -79,7 +79,6 @@ class MainActivity : AppCompatActivity() {
         dersNot.setSelection(0)
     }
 
-
     fun ortalamaHesapla(View : View){
 
         var toplamNot = 0.0

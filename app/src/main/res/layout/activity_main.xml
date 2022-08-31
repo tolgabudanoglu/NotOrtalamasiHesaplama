@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/bg"
+    android:orientation="vertical"
     tools:context="com.example.notortalamashesaplama.MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,11 +19,11 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="217dp"
             android:layout_marginRight="217dp"
+            android:backgroundTint="@android:color/transparent"
             android:hint="@string/ders_ad_n_giriniz"
+            android:popupBackground="@color/purple_500"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
-            android:backgroundTint="@android:color/transparent"
-            android:popupBackground="@color/purple_500"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/dersKredi"
             app:layout_constraintEnd_toEndOf="parent"
@@ -40,10 +40,10 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="312dp"
             android:layout_marginRight="312dp"
-            android:textStyle="bold"
+            android:backgroundTint="@color/purple_500"
             android:entries="@array/krediler"
             android:popupBackground="@color/purple_500"
-            android:backgroundTint="@color/purple_500"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -54,10 +54,10 @@
             android:layout_width="147dp"
             android:layout_height="30dp"
             android:layout_marginTop="8dp"
-            android:entries="@array/notlar"
-            android:textStyle="bold"
             android:backgroundTint="@color/purple_500"
+            android:entries="@array/notlar"
             android:popupBackground="@color/purple_500"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.53"
             app:layout_constraintStart_toStartOf="parent"
@@ -83,18 +83,18 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/purple_200">
-        
+
     </View>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="500dp"
-        >
+        android:layout_height="500dp">
+
         <LinearLayout
+            android:id="@+id/rootLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/rootLayout">
+            android:orientation="vertical">
 
         </LinearLayout>
 
@@ -106,14 +106,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Hesapla"
         android:background="@drawable/btnorthesap"
-        android:onClick="ortalamaHesapla" />
-
-
-
-
-
+        android:onClick="ortalamaHesapla"
+        android:text="Hesapla" />
 
 
 </LinearLayout>
